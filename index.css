@@ -429,7 +429,13 @@
 #contact .contact-info i {
     width: 30px;
     font-style: normal;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: black;
 }
-#contact .contact-info i{
+#contact .contact-info p{
     color: black;
 }
