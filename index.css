@@ -394,6 +394,7 @@
     padding: 64px 16px;
     margin: 0 auto;
     background-color: white;
+    contain: layout;
 }
 #contact h2 {
     font-family: "Segoe UI",Arial,sans-serif;
@@ -425,6 +426,7 @@
     font-size: 18px;
     font-family: "Lato", sans-serif;
     line-height: 1.5;
+    float: left;
 }
 #contact .contact-info i {
     width: 30px;
@@ -437,5 +439,52 @@
     color: black;
 }
 #contact .contact-info p{
+    color: black;
+}
+.message-info {
+    width: 50%;
+    margin: 0 -16px 8px -16px;
+    padding: 0 8px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    float: right;
+}
+.sender-info {
+    margin: 0 -16px 8px -16px;
+    padding: 0 8px;
+    font: inherit;
+    contain: layout;
+}
+.sender-inf-box {
+    padding: 0 8px;
+    font: inherit;
+    float: left;
+    width: 50%;
+}
+.sender-inf {
+    width: 100%;
+    border: 1px solid #ccc;
+    font: inherit;
+    padding: 8px;
+}
+.message {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font: inherit;
+    width: 100%;
+}
+.send-button {
+    margin: 16px 0;
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+    font: inherit;
+}
+.send-button:hover {
+    background-color: #ccc;
     color: black;
 }
