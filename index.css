@@ -430,3 +430,6 @@
     width: 30px;
     font-style: normal;
 }
+#contact .contact-info i{
+    color: black;
+}
