@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+#navigator {
+    background-color: black;
+    height: 46.5px;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+}
+.nav-button {
+    font-size: 15px;
+    color: white;
+    line-height: 46.5px;
+    padding: 0px 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: left;
+}
+.nav-button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+#drop-down {
+    display: inline-block;
+}
+#drop {
+    margin-top: 46.5px;
+    position: relative;
+    display: none;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.drop-content {
+    font-size: 15px;
+    padding: 8px 16px;
+    min-width: 160px;
+    color: black;
+    background-color: white;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+#drop-down:hover #drop {
+    display: block;
+}
+#drop-down:hover #more {
+    background-color: #ccc;
+    color: black;
+}
+.drop-content:hover {
+    background-color: #ccc;
+    color: black;
+}
+#search {
+    color: white;
+    float: right;
+}
+#search:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+#home {
+    width: 100%;
+    position: relative;
+}
+.slide {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    top: 46.5px;
+}
+.home-text {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    z-index: 1;
+    width: 100%;
+    padding: 32px;
+}
+.home-text h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 400;
+}
+.home-text p {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 15px;
+}
+#band {
+    background-color: white;
+    padding: 64px 16px;
+    margin-top: 46.5px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.band-content {
+    text-align: center;
+}
+#band h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px auto;
+}
+#band p {
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    margin: 15px auto;
+}
+#italic {
+    font-style: italic;
+    opacity: 60%;
+    text-align: center;
+}
+#introduction {
+    text-align: justify;
+}
+#band-img {
+    padding: 32px;
+}
+.band-member {
+    width: 33.3333333%;
+    display: inline-block;
+    text-align: center;
+}
+.band-member p {
+    text-transform: capitalize;
+}
+.band-member img {
+    width: 60%;
+    margin-bottom: 16px;
+}
+#tour {
+    width: 100%;
+    background-color: black;
+}
+#tour-section {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tour-section h2 {
+    font-size: 30px;
+    color: white;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    text-align: center;
+}
+#tour-section #reminder {
+    opacity: 60%;
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-family: "Lato", sans-serif;
+}
+.space {
+    height: 18.4px;
+}
+#tour-time {
+    width: 100%;
+}
+.tour-months {
+    padding: 8px 16px;
+    font-family: "Lato", sans-serif;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+.tour-months p {
+    color: #757575;
+    font-size: 15px;
+    text-align: left;
+    display: inline-block;
+}
+.tour-months .sold-out {
+    color: white;
+    background-color:#f44336;
+    padding: 0px 8px;
+    margin-left: 16px;
+}
+.tour-months .available {
+    color: white;
+    float: right;
+    margin-right: 16px;
+    padding: 0 8px;
+    text-align: center;
+    background-color: black;
+    border-radius: 100%;
+}
+#tickets {
+    padding: 32px 0px;
+    margin: 0px -8px;
+}
+.tickets-info {
+    margin-bottom: 16px;
+    width: 33.33333%;
+    padding: 0 8px;
+    display: inline-block;
+}
+.tickets-info img {
+    width: 100%;
+} 
+.tickets-info img:hover {
+    opacity: 60%;
+}
+.tickets-overview {
+    padding: 0.01em 16px;
+    background-color: white;
+}
+.place {
+    color: black;
+    padding: 15px 0;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 15px;
+}
+.date {
+    margin-bottom: 15px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    opacity: 60%;
+    text-align: left;
+    font-size: 15px;
+}
+.overview {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+    color: black;
+    text-align: left;
+}
+.buy-tickets {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 16px;
+    font-family: "Lato", sans-serif;
+}
+.buy-tickets:hover {
+    color: black;
+    background-color: #ccc;
+}
+#ticket-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    top: 0;
+    left: 0;
+    margin: auto;
+    padding-top: 100px;
+    display: none;
+}
+#ticket-order {
+    margin: auto;
+    background-color: white;
+    width: 600px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    animation-name: descend;
+    animation-duration: 0.4s;
+}
+@keyframes descend {
+    from {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.ticket-header {
+    background-color: #009688;
+    padding: 32px 0;
+    color: white;
+    position: relative;
+}
+.ticket-header i {
+    margin-right: 16px;
+}
+.ticket-header h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+.ticket-header .close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Lato", sans-serif;
+    padding: 20px;
+    background-color: #009688;
+    display: inline-block;
+    cursor: pointer;
+}
+.close-button p {
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+.close-button:hover {
+    background-color: #f44336;
+}
+.order-content {
+    padding: 0.01em 16px;
+    background-color: white;
+    contain: layout;
+}
+.order-content p {
+    font-family: "Lato", sans-serif;
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.order-content input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.pay-button {
+    margin: 16px 0;
+    padding: 16px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #009688;
+    color: white;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.pay-button:hover {
+    background-color: #ccc;
+    color: black;
+}
+.order-content .order-help {
+    margin-top: 15px;
+    margin-bottom: 32px;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    float: right;
+}
+.order-help a {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2196F3;
+}
+#contact {
+    max-width: 800px;
+    padding: 64px 16px;
+    margin: 0 auto;
+    background-color: white;
+}
+#contact h2 {
+    font-family: "Segoe UI",Arial,sans-serif;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.5;
+}
+#contact p {
+    text-align: center;
+}
+#contact i {
+    font-style: italic;
+    opacity: 0.6;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: black;
+}
+.send-message {
+    padding: 32px 0;
+    font-family: "Lato", sans-serif;
+}

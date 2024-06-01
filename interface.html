@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="the-band">
+        <div id="top">
+            <div id="navigator">
+                <a class="nav-button" href="#home">home</a>
+                <a class="nav-button" href="#band">band</a>
+                <a class="nav-button" href="#tour">tour</a>
+                <a class="nav-button" href="#contact">contact</a>
+                <div id="drop-down">
+                    <div class="nav-button" id="more">more
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div id="drop">
+                        <a href="#merchandise" class="drop-content">merchandise</a>
+                        <a href="#extras" class="drop-content">extras</a>
+                        <a href="#media" class="drop-content">media</a>
+                    </div>
+                </div>
+                <div class="nav-button" id="search"><i class="fa fa-search"></i></div>
+            </div>
+        </div>
+        <div id="body-content">
+            <div id="home">
+                <div class="slide" id="img-1">
+                    <img src="https://www.w3schools.com/w3images/la.jpg" width="100%">
+                    <div class="home-text">
+                        <h3>Los Angeles</h3>
+                        <p>We had the best time playing at Venice Beach!</p>
+                    </div>
+                </div>
+                <div class="slide" id="img-2">
+                    <img src="https://www.w3schools.com/w3images/ny.jpg" width="100%">
+                    <div class="home-text">
+                        <h3>New York</h3>
+                        <p>The atmosphere in New York is lorem ipsum.</p>
+                    </div>
+                </div>
+                <div class="slide" id="img-3">
+                    <img src="https://www.w3schools.com/w3images/chicago.jpg" width="100%">
+                    <div class="home-text">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago - A night we won't forget.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="band">
+                <h2 class="band-content">the band</h2>
+                <p class="band-content" id="italic">We love music</p>
+                <p class="band-content" id="introduction">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="band-content" id="band-img">
+                    <div class="band-member">
+                        <p>name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg">
+                    </div>
+                    <div class="band-member">
+                        <p>name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg">
+                    </div>
+                    <div class="band-member">
+                        <p>name</p>
+                        <img src="https://www.w3schools.com/w3images/bandmember.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="tour">
+                <div id="tour-section">
+                    <h2>TOUR DATES</h2>
+                    <p id="reminder">Remember to book your tickets!</p>
+                    <div class="space"></div>
+                    <div id="tour-time">
+                        <div class="tour-months">
+                            <p>September</p>
+                            <p class="sold-out">Sold out</p>
+                        </div>
+                        <div class="tour-months">
+                            <p>October</p>
+                            <p class="sold-out">Sold out</p>
+                        </div>
+                        <div class="tour-months">
+                            <p>November</p>
+                            <p class="available">3</p>
+                        </div>
+                    </div>
+                    <div id="tickets">
+                        <div class="tickets-info">
+                            <img src="https://www.w3schools.com/w3images/newyork.jpg">
+                            <div class="tickets-overview">
+                                <p class="place">New York</p>
+                                <p class="date">Fri 27 Nov 2016</p>
+                                <p class="overview">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a class="buy-tickets" onclick="buyTickets()">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="tickets-info">
+                            <img src="https://www.w3schools.com/w3images/paris.jpg">
+                            <div class="tickets-overview">
+                                <p class="place">Paris</p>
+                                <p class="date">Sat 28 Nov 2016</p>
+                                <p class="overview">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a class="buy-tickets" onclick="buyTickets()">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div class="tickets-info">
+                            <img src="https://www.w3schools.com/w3images/sanfran.jpg">
+                            <div class="tickets-overview">
+                                <p class="place">San Francisco</p>
+                                <p class="date">Sun 29 Nov 2016</p>
+                                <p class="overview">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <a class="buy-tickets" onclick="buyTickets()">Buy Tickets</a>
+                            </div>
+                        </div>
+                        <div id="ticket-modal">
+                            <div id="ticket-order">
+                                <div class="ticket-header">
+                                    <h2>
+                                        <i class="fa fa-suitcase w3-margin-right"></i>Tickets
+                                    </h2>
+                                    <div class="close-button" onclick="closeButton()"><p>x</p></div>
+                                </div>
+                                <div class="order-content">
+                                    <p>
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Tickets, $15 per person
+                                    </p>
+                                    <input type="text" placeholder="How many?">
+                                    <p>
+                                        <i class="fa fa-user"></i>
+                                        Send To
+                                    </p>
+                                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                                    <button class="pay-button">PAY <i class="fa fa-check"></i></button>
+                                    <p class="order-help">Need <a href="#">help?</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <h2>CONTACT</h2>
+                <p><i>Fan? Drop a note!</i></p>
+                <div class="send-message">
+                    <div class="contact-info">
+                        
+                    </div>
+                    <div class="message-info"></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <img src="">
+            <div id="social-media"></div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="interface.css">
+    <script src="interface.js"></script>
+</body>
+</html>
