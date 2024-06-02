@@ -24,6 +24,9 @@
     text-decoration: none;
     float: left;
 }
+#navigator .small-screen {
+    display: none;
+}
 .nav-button:hover {
     cursor: pointer;
     background-color: #ccc;
@@ -530,8 +533,7 @@
     .large-screen {
         display: none;
     }
-    #navigator .small-screen {
-        display: none;
+    #navigator .nav-button.small-screen {
         width: 100%;
         background-color: black;
     }
@@ -556,10 +558,10 @@
     .tickets-info {
         width: 33.33333%;
     }
-    #navigator .small-screen {
-        display: none;
-    }
     #toggle-nav-bar {
         display: none;
+    }
+    #navigator .small-screen {
+        display: none!important;
     }
 }
