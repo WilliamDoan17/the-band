@@ -26,6 +26,8 @@
 }
 #navigator .small-screen {
     display: none;
+    width: 100%;
+    background-color: black;
 }
 .nav-button:hover {
     cursor: pointer;
@@ -532,14 +534,6 @@
     }
     .large-screen {
         display: none;
-    }
-    #navigator .nav-button.small-screen {
-        width: 100%;
-        background-color: black;
-    }
-    #navigator .nav-button.small-screen:hover {
-        background-color: #ccc!important;
-        color: black!important;
     }
     #toggle-nav-bar {
         display: block;
