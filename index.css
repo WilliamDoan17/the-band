@@ -29,8 +29,8 @@
 }
 .nav-button:hover {
     cursor: pointer;
-    background-color: #ccc;
-    color: black;
+    background-color: #ccc!important;
+    color: black!important;
 }
 #drop-down {
     display: inline-block;
