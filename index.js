@@ -31,3 +31,9 @@ function toggleNavBar() {
         } 
     }
 }
+document.onclick = function(whatClicked) {
+    if (whatClicked.target.id === 'ticket-modal') {
+        document.getElementById('ticket-modal').style.display = 'none';
+    }
+}
+
