@@ -138,15 +138,10 @@
 }
 .band-member {
     width: 100%;
-    display: inline-block;
     float: left;
     text-align: center;
 }
-@media (min-width: 601px) {
-    .band-member {
-        width: 33.333333%;
-    }
-}
+
 .band-member p {
     text-transform: capitalize;
 }
@@ -219,12 +214,12 @@
 #tickets {
     padding: 32px 0px;
     margin: 0px -8px;
+    contain: layout;
 }
 .tickets-info {
     margin-bottom: 16px;
-    width: 33.33333%;
     padding: 0 8px;
-    display: inline-block;
+    float: left;
 }
 .tickets-info img {
     width: 100%;
@@ -522,4 +517,45 @@
     font: inherit;
     font-size: 15px;
     color: black;
+}
+@media (max-width: 600px) {
+    .tickets-info {
+        width: 100%;
+    }
+    #ticket-order {
+        margin: 0 10px;
+        width: auto;
+    }
+    .large-screen {
+        display: none;
+    }
+    .small-screen {
+        display: none;
+        width: 100%;
+        background-color: black;
+    }
+    #toggle-nav-bar {
+        display: block;
+        float: right;
+    }
+}
+@media (max-width:768px) {
+    #ticket-order {
+        width: 500px;
+    }
+}
+
+@media (min-width: 601px) {
+    .band-member {
+        width: 33.333333%;
+    }
+    .tickets-info {
+        width: 33.33333%;
+    }
+    #navigator .small-screen {
+        display: none;
+    }
+    #toggle-nav-bar {
+        display: none;
+    }
 }

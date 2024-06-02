@@ -12,12 +12,16 @@
     <div id="the-band">
         <div id="top">
             <div id="navigator">
-                <a class="nav-button" href="#home">home</a>
-                <a class="nav-button" href="#band">band</a>
-                <a class="nav-button" href="#tour">tour</a>
-                <a class="nav-button" href="#contact">contact</a>
-                <div id="drop-down">
-                    <div class="nav-button" id="more">more
+                <a id="home-button" class="nav-button" href="#home">home</a>
+                <a class="nav-button large-screen" href="#band">band</a>
+                <a class="nav-button large-screen" href="#tour">tour</a>
+                <a class="nav-button large-screen" href="#contact">contact</a>
+                <a class="nav-button" id="toggle-nav-bar" onclick="toggleNavBar()"><i class="fa fa-bars"></i></a>
+                <a class="nav-button small-screen" href="#band">band</a>
+                <a class="nav-button small-screen" href="#tour">tour</a>
+                <a class="nav-button small-screen" href="#contact">contact</a>
+                <div id="drop-down" class="large-screen">
+                    <div class="nav-button large-screen" id="more">more
                         <i class="fa fa-caret-down"></i>
                     </div>
                     <div id="drop">
@@ -26,7 +30,7 @@
                         <a href="#media" class="drop-content">media</a>
                     </div>
                 </div>
-                <div class="nav-button" id="search"><i class="fa fa-search"></i></div>
+                <div class="nav-button large-screen" id="search"><i class="fa fa-search"></i></div>
             </div>
         </div>
         <div id="body-content">
@@ -119,28 +123,28 @@
                                 <a class="buy-tickets" onclick="buyTickets()">Buy Tickets</a>
                             </div>
                         </div>
-                        <div id="ticket-modal">
-                            <div id="ticket-order">
-                                <div class="ticket-header">
-                                    <h2>
-                                        <i class="fa fa-suitcase w3-margin-right"></i>Tickets
-                                    </h2>
-                                    <div class="close-button" onclick="closeButton()"><p>x</p></div>
-                                </div>
-                                <div class="order-content">
-                                    <p>
-                                        <i class="fa fa-shopping-cart"></i>
-                                        Tickets, $15 per person
-                                    </p>
-                                    <input type="text" placeholder="How many?">
-                                    <p>
-                                        <i class="fa fa-user"></i>
-                                        Send To
-                                    </p>
-                                    <input class="w3-input w3-border" type="text" placeholder="Enter email">
-                                    <button class="pay-button">PAY <i class="fa fa-check"></i></button>
-                                    <p class="order-help">Need <a href="#">help?</a></p>
-                                </div>
+                    </div>
+                    <div id="ticket-modal">
+                        <div id="ticket-order">
+                            <div class="ticket-header">
+                                <h2>
+                                    <i class="fa fa-suitcase w3-margin-right"></i>Tickets
+                                </h2>
+                                <div class="close-button" onclick="closeButton()"><p>x</p></div>
+                            </div>
+                            <div class="order-content">
+                                <p>
+                                    <i class="fa fa-shopping-cart"></i>
+                                    Tickets, $15 per person
+                                </p>
+                                <input type="text" placeholder="How many?">
+                                <p>
+                                    <i class="fa fa-user"></i>
+                                    Send To
+                                </p>
+                                <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                                <button class="pay-button">PAY <i class="fa fa-check"></i></button>
+                                <p class="order-help">Need <a href="#">help?</a></p>
                             </div>
                         </div>
                     </div>

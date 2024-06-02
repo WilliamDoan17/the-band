@@ -16,4 +16,18 @@ function closeButton() {
 function buyTickets() {
     document.getElementById('ticket-modal').style.display = 'block';
 }
-
+var smallScreenNavBarList = document.getElementsByClassName('small-screen');
+var smallScreenNavBarDisplay = 0;
+function toggleNavBar() {
+    smallScreenNavBarDisplay = (smallScreenNavBarDisplay + 1) % 2;
+    if (smallScreenNavBarDisplay === 1) {
+        for (smallScreenNavButton of smallScreenNavBarList) {
+            smallScreenNavButton.style.display = 'block';
+        } 
+    }
+    else {
+        for (smallScreenNavButton of smallScreenNavBarList) {
+            smallScreenNavButton.style.display = 'none';
+        } 
+    }
+}
