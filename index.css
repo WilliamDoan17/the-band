@@ -538,7 +538,8 @@
         background-color: black;
     }
     #navigator .nav-button.small-screen:hover {
-        background-color: #ccc;
+        background-color: #ccc!important;
+        color: black!important;
     }
     #toggle-nav-bar {
         display: block;
