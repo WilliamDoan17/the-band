@@ -530,7 +530,7 @@
     .large-screen {
         display: none;
     }
-    .small-screen {
+    #navigator .small-screen {
         display: none;
         width: 100%;
         background-color: black;
