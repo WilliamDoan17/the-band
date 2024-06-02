@@ -276,7 +276,6 @@
 }
 #ticket-modal {
     position: fixed;
-    height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 3;
@@ -285,6 +284,8 @@
     margin: auto;
     padding-top: 100px;
     display: none;
+    bottom: 0;
+    overflow: auto;
 }
 #ticket-order {
     margin: auto;
@@ -522,7 +523,7 @@
     .tickets-info {
         width: 100%;
     }
-    #ticket-order {
+    #ticket-modal #ticket-order {
         margin: 0 10px;
         width: auto;
     }
@@ -537,6 +538,9 @@
     #toggle-nav-bar {
         display: block;
         float: right;
+    }
+    #ticket-modal {
+        padding-top: 46px;
     }
 }
 @media (max-width:768px) {
