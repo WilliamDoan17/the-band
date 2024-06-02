@@ -537,6 +537,9 @@
         width: 100%;
         background-color: black;
     }
+    #navigator .nav-button.small-screen:hover {
+        background-color: #ccc;
+    }
     #toggle-nav-bar {
         display: block;
         float: right;
